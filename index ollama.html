@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Timer</title>
+    <style>
+        #demo {
+            font-family: sans-serif;
+            font-size: 128px;
+            font-weight: 100;
+            color: rgb(255, 255, 255);
+        }
+
+        button {
+            background-color: rgb(0, 0, 0);
+            font-family: sans-serif;
+            font-weight: 100;
+            font-size: medium;
+            color: white;
+            margin-right: 8px;
+            font-size: large;
+        }
+
+         h1 {
+            font-family: sans-serif;
+            font-weight: 100;
+            color: white;
+            margin: 8px;
+        }
+
+        p {
+           font-family: sans-serif;
+            font-weight: 100;
+            color: rgb(255, 255, 255);
+
+        }
+    </style>
+
+        <script> // counting time
+        let timerRunning = false;
+        let timerStart;
+        let remainingTime;
+
+        function startTimer() {
+            if (!timerRunning) {
+                timerRunning = true;
+                timerStart = Date.now();
+                calculateRemainingTime();
+                window.setInterval(calculateRemainingTime, 1000);
+            }
+        }
+
+        function resetTimer() {
+            timerRunning = false;
+            window.clearInterval(timerId);
+            document.getElementById("demo").innerHTML = "0d 00h 00m 00s";
+        }
+
+        function calculateRemainingTime() {
+            if (timerRunning) {
+                const currentTime = Date.now();
+                const elapsedTime = (currentTime - timerStart) / 1000;
+                const days = Math.floor(elapsedTime / (60 * 60 * 24));
+                const hours = Math.floor((elapsedTime % (60 * 60 * 24)) / (60 * 60));
+                const minutes = Math.floor((elapsedTime % (60 * 60)) / 60);
+                const seconds = Math.floor(elapsedTime % 60);
+
+                document.getElementById("demo").innerHTML = days + "d " + 
+hours.toString().padStart(2, '0') + "h " + minutes.toString().padStart(2, '0') + "m " + 
+seconds.toString().padStart(2, '0') + "s ";
+
+                if (elapsedTime >= 60 * 60 * 24) {
+                    timerRunning = false;
+                    clearInterval(timerId);
+                }
+            }
+        }
+
+        let timerId;
+    </script>
+</head>
+
+<body style="background-color: black;">
+
+    <div style="margin-left: 10%; margin-right: 10%; margin-top: 120px;"> 
+
+    <h1 id="demo">0d 00h 00m 00s</h1>
+      
+    <div style="align-items: center;"> 
+
+       <p>Is the container full?</p>
+      <div style="align-items: center;"> 
+      <button  onclick="startTimer()">Yes</button>
+      <button  onclick="resetTimer()">No</button>
+     </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+
+
+<p> <strong> if Timer is  12h </strong> materials are very probably still there 
+
+/ if Timer is > 24h maybe materials are still there
+/ if Timer is > 48h probably materials are not there anymore
+</p>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <hr>
+    <h1> Documentation</h1> 
+
+</div>
+
+
+</body>
+
+<img >
+
+</html>
