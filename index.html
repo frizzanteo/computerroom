@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
+        <link rel="icon" type="image/x-icon" href="little bomb timer.png">
+
     <style>
         #demo {
             font-family: sans-serif;
             font-size: 80px;
             font-weight: 100;
-            color: rgb(255, 255, 255);
         }
 
         button {
@@ -18,23 +19,50 @@
             font-family: sans-serif;
             font-weight: 100;
             font-size: medium;
-            color: white;
             margin-right: 8px;
             font-size: large;
+            color: white;
         }
 
          h1 {
             font-family: sans-serif;
-            font-weight: 100;
-            color: white;
+            font-size: 48px;
+            font-weight: 400;
+            margin: 8px;
+        }
+
+        h2 {
+            font-family: sans-serif;
+            font-size: 24;
+            font-weight: 400;
+            margin: 8px;
+        }
+
+
+        h3 {
+            font-family: sans-serif;
+            font-size: 18;
+            font-weight: 400;
             margin: 8px;
         }
 
         p {
            font-family: sans-serif;
-            font-weight: 100;
-            color: rgb(255, 255, 255);
+           font-size: 16px ;
+            font-weight: 200;
 
+        }
+
+        li {
+
+                font-family: sans-serif;
+           font-size: 16px ;
+            font-weight: 200;
+        }
+
+        a{
+            text-decoration: underline;
+            color: blue;
         }
     </style>
 
@@ -82,10 +110,20 @@ seconds.toString().padStart(2, '0') + "s ";
     </script>
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: rgb(255, 255, 255);">
+
+
 
     <div style="margin-left: 10%; margin-right: 10%; margin-top: 100px;"> 
+     <img src="little bomb timer.png" style="max-block-size: 20px; display: flex;" >
 
+    <hr>
+    <p>KISD/Short_project/Ben_and_Lasse/Computer_room/Parallel_group/Adrian_Matteo_Leijie_Virginia</p>
+    <hr>
+
+    <br>
+
+    <p>/ timer</p> 
     <h1 id="demo">0d 00h 00m 00s</h1>
       
     <div style="align-items: center;"> 
@@ -97,40 +135,217 @@ seconds.toString().padStart(2, '0') + "s ";
      </div>
     </div>
 
-
     <br>
  
 
-<p>
-    
-/ if Timer is  12h materials are very probably still there 
-<br>/ if Timer is > 24h maybe materials are still there
-<br>/ if Timer is > 48h probably materials are not there anymore
+<p> 
+    / press_yes / if the container is full_the timer will start
+ <br>   / press_no / if the container is not full_the timer will stop
+<br>
+ <!-- <br>   / <strong>white</strong> / if Timer is  < 12h is probable that materials are still there 
+<br>/ <strong style="background-color: yellow;">yellow</strong>  / if Timer is > 24h maybe materials are still there
+<br>/  <strong style="background-color: red;">red</strong>  / if Timer is > 48h probably materials are not there anymore
+</p> -->
+
+    <br>
+    <br>
+
+
+
+    <hr>
+    <p id="navigate">/ Tutorial</p> 
+<hr>
+
+  <p><strong> / Turn on the device</strong></p> 
+    <p> - make sure that all the cables are plugged in </p> 
+    <p> - if the device does not turn on, press the button on the powerbank side </p> 
+    <p> - if the light on the Raspberry is red, press the little button on the left side of the Raspberry </p> 
+    <p> - wait until the terminal show up</p>
+
+  <p> <strong> / Set up</strong> </p> 
+    <p> - type "screen" and press [↵] (enter) </p> 
+    <p> - type "ollama run Lucy" and press [↵] (enter) </p> 
+
+      <p> <strong> / Writing prompt to the LLM</strong> </p> 
+
+    <p> - type the message and press [↵] (enter)</p>
+    <p > - to read what the LLM produced, press [STRG] or [CMD]+ [A] and then right away [Ü]. <br> Now you can use the arrows to navigate the answer: UP [↑] DOWN [↓] <br> To go back to the terminal message input press [ESC]</p> 
+
+
+    <br>
+
+   
+  <p> <strong> / Additional notes</strong> </p> 
+    <p> - if the screen turn white, press the little button on the left side of the Raspberry, to reboot the system </p> 
+    <p> - to shut down the Raspberry, write "sudo shutdown -h now" </p> 
+    <p> - to consume less power you can enter in an only terminal mode by writing "sudo raspi-config" </p> 
+
+
+
+    <br>
+
+
+    <hr>
+    <p>/ documentation</p> 
+    <hr>
+     
+    <p>/ chapter 1</p> 
+    <h1>The <strong style="color: darkgreen;"> green </strong> container.</h1> 
+    <p>Here at KISD, there is a big <strong style="color: darkgreen;"> green </strong> container. Is used to collect offcuts from the workshop. But we noticed that many discarded items still hold great potential for reuse. However, due to a lack of information and awareness about what these objects are inside the container and how they can be repurposed, they often end up in the landfill. </p> 
+
+    <h2>soooo</h2> 
+    <p> we tought what can we design in a low-cost, low-tech, and low-material way, that can offer assistance to trigger creative ideas to reuse the wasted materials inside the container?.</p>
+
+    <h2>of course</h2> 
+    <p> we aim to use materials and technologies that are easily accessible (directly from the container itself!), and the energy consumption should be low, as much as possible, both from the hardware and the software used, following the Permacomputer principles.</p>
+
+<hr>
+
+    <p>/ chapter 2</p> 
+    <h1>The <strong style="color: rgb(17, 26, 210);"> plan</strong>.</h1> 
+    <p>After our brainstorming we decided that we want to create a physical space next to the container, with an AI  basic system capable of sparkle our creativity. The this website, which is equipped with a timer that warn people when the container is about to get emptied and it also contain all the documentation of the project. Here a short </p> 
+
+    <h2> Physical space </h2>
+    <p>We decided to build our little space entirely from materials we salvaged around and scraps from the container. In this way, the space doesn’t just support our project; it embodies our core concept—giving new life to old things we consider as waste. </p>
+
+  <h2> AI station </h2>
+    <p>We mounted an AI system on a Raspberry Pi, a tiny open source one that runs locally, with no internet connection required. The system need a keyboard (even an old one) to chat with the terminal. We opted for an e-ink screen: is ideal for outdoor use, as it remains clearly visible even under strong sunlight, uses almost no energy, and can retain content even when the power is off. Because the system is small and lightweight, it consumes very little power, so the system runs entirely on solar energy. Altogether, this setup allows the system to operate reliably outdoors all day.</p>
+
+  <h2> Website </h2>
+    <p>is a static website using only basic HTML and CSS and just a sprinkle of Java Script on top. We used also compressed images, a default typeface, and minimal assets to minimize the weight. By minimizing scripts, styles, and heavy processing, we reduce the energy consumption typically caused by more complex web frameworks. At the same time, we’ve worked to find a balance between low-tech implementation and a clear, usable experience for you reading this guide.</p>
+
+    <h3 style="color: blue;"> everything togheter should look something like this:</h3>
+    <img src="MAP_V1.0.png" style="width: 90%; background-color: rgb(211, 211, 210);">
+
+
+<p>/ chapter 3</p> 
+<h1>The <strong style="color: rgb(160, 160, 160);"> guide</strong>.</h1> 
+<p>If you want to replace our experiment you will be able to do so by following this guide, step 2 step. We built part of the project with stuff we have found around and we invite you to do the same. Salvaging material is more important than recreating 1:1 what we did.</p> 
+
+<ul>
+<a href="#space"> <li>How we build the "Inspiration station"</li> </a>
+  <a href="#system"> <li>How we setted up the Raspberry</li> </a>
+  <a href="#energy"> <li>How we powered the system</li> </a>
+  <a href="#AI"> <li>How we setted up Lucy</li> </a>
+  <a href="#prompt"> <li> The prompt we used</li> </a>
+  <a href="#prompt"> <li id="website"> Website documentation </li> </a>  
+
+
+</ul>
+
+<br>
+
+  <hr>
+  <h2 id="space"> How we build the "Inspiration station" </h2>  
+  <p> Idea: The first thing we needed to discuss was to concretise how the “inspirational Station should interact with us. Important aspects we kept in mind was:availability, simple access for usage and the time interacting with it. As we didn't know exactly how long the raspberry in combination with ‘tiny Ollama’ will take for a prompt (we even thought that it would take up to 10 minutes), we got used to the idea of setting up a chair with some attachments for the keyboard, raspberry, display, battery solar panel… kind of like Isaac’s Super Chair in a different way. </p>
+
+  <p> Working: With the leftovers we found in the container or the wood/metal workshop, we've had enough material to optimise our Chair for our purpose. Because of the typical KISD chairs in the courtyard, we made the decision to take one of these chairs and upgrade it with our inspirational device. The advantage of the chair is the comfort, the sustainability in any weather and of course the recognition as the KISD Chairs. The Umbrella stand was then perfect as it could stand next to the chair as an independent device, preventing a stable ground for keyboard, raspberry and the other setup of our inspiration station. We were lucky that we had a big screw on top of the stand, where we later on screwed the wood holding the device… For the keyboard we built a wood-board with 4 simple wooden parts: 
 </p>
 
-  <br>
+<p> -chipboard bar (bottom): it holds the mass of the device on top and is attached to the umbrella stand through a hole in the one end of the bar and the screw from the umbrella stand. </p>
 
-<img src="little bomb timer.png" style="position: absolute; top: 100 px; right:100px;" >
+<p> -plywood plate: it is attached to the chipboard with two screws from the bottom and with two screws to the next two wooden parts: </p>
+<p> -wooden beam: It prevents the keyboard to fall and is the back of our device where display and raspberry + cable are furthermore attached. One adjustment is needed; a small hole on the bottom for the kable of the keyboard to go through.  </p>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<p> -plywood bar: this is the last protection for the keyboard to stabilise it. We flattened this bar with a grinding machine so it serves also as a hand rest. </p>
 
-
-
-    
+<p> After the Keyboard stand was finished we focused on where the display should be attached and how…</p>
+  <hr>
+  <p> As we said to use as less resource possible we built the station with scrap and offcuts that we found around. The final design come togheter while sourcing material. </p>
     <hr>
-    <h1> Documentation</h1> 
+
+  <h2 id="system"> How we setted up the AI station </h2>
+    <hr>
+
+
+  <p> <strong> </strong> </p>
+      <p>1. Be sure you have a stable WIFI with strong signal, and a password you know</p>
+      <p>2. Downloading Ollama (https://ollama.com)</p>
+      <p>3. Downloading the Raspberry Pi installer (https://www.raspberrypi.com/software/)</p>
+      <p>4. Take out the Raspberry Pi’s memory card and insert it into a microSD card reader, then connect it to your computer. Follow the setup guide to configure your Raspberry Pi — including its name (you can leave it as default), a password, and the Wi-Fi name and password it will connect to later. Make sure to remember all your settings — you’ll need them soon! And the Internet for the Pi should be the same with your computer </p>
+
+    <p> ⚠️ Make sure the Raspberry Pi is connected to the same network as your computer.</p>
+
+    <p> Open the Terminal on your computer and follow the setup steps to connect the Raspberry Pi. After that, you can input and manage content directly from your computer terminal. You can check the code at Code1 in “CodeBase” section</p>
+
+    <p> ⚠️You can skip “Enabling VNC to gain visual access”.</p>
+
+    <p>  <strong> INSTALL OLLAMA IN TO THE RASPBERRY PI </strong> </p>
+
+    <p> Refer to Code 2 for the basic steps to load a suitable model onto your Raspberry Pi device. In our setup, we used the Sllama, which balances performance and size for edge deployment. If your device fails to run this model due to limited memory or compute resources, you may consider switching to a smaller model. When choosing an alternative, follow these guidelines: </p>
+
+    <p>1. Model Size: Ensure the model is lightweight enough (e.g., ≤2GB) to run efficiently on Raspberry Pi (especially models like Pi 4 or Pi 5 with 4–8GB RAM).</p>
+
+    <p>2. Inference Accuracy: Choose a model with reasonably accurate responses for your task. Consider evaluating with a small set of benchmark prompts.</p>
+
+        <p> ⚠️ We tested Tiny Ollama, but it failed to run on Raspberry Pi 5.</p>
+
+
+    <p> Prepare to connect the display module to the Raspberry Pi. </p>
+
+    <p> Before proceeding, make sure to properly shut down the connection between the terminal and the Raspberry Pi by entering the following command in the terminal "sudo poweroff" until the LED indicator on the Raspberry Pi turns solid red. </p>
+
+
+
+
+
+
+  <p> <strong> For the screen </strong> we initially wanted to plug connect an e-ink screen, reducing the power consumption even more. We suggest you to go in this direction if you can. Because of the time costraints we had too opt for a normal plug-in touch screen, compatible with the Raspberry.</p>
+      <p>1. To connect it, you just need to plug in the screen trough the pins of the Raspberry</p>
+      <p>You can install the driver of the screen trough the terminal...</p>
+
+
+  <p> <strong> To make the text bigger </strong> open the terminal and type in the terminal "sudo dpkg-reconfigure console-setup"</p>
+    <p>1. Select UTF-8</p>
+    <p>2. Select "Terminus" or "Terminus Bold"</p>
+    <p>3. If you have a small screen we suggest to select 12x24</p>
+    <p>4. Terminal should apply the change without further commands</p>
+
+
+
+  <p> To <strong> navigate in the terminal </strong> you need to install Screen by typing in the terminal "sudo apt install screen"</p>
+    <p> 1. Follow the instruction of the terminal </p>
+    <p> 2. Screen should be now installed, but is a program that you need to call everytime you turn on the Raspberry </p>
+    <p> 3. To run Screen, just type "screen" in the terminal </p>
+    <p> 4. To navigate follow the <a href="#navigate"> navigation tutorial</a> </p>
+
+
+  <hr>
+  <h2 id="energy"> How we powered the system" </h2>
+    <hr>
+
+   <p>When selecting an energy system, we took into account the lack of accessible power outlets in outdoor environments, as well as our desire for the device to remain portable. Considering both portability and sustainability, we identified the following possible options:</p>
+   <p> Solar power banks – A more sustainable option, though potentially limited in energy efficiency.</p>
+   <p> Power banks – More efficient, but not sustainable and re-charge needed.</p>
+   <p> Custom solar energy system – Offers both sustainability and sufficient energy output. However, we have not implemented this option. You may [refer here] for materials and instructions to build your own solar-powered energy system.</p>
+   <p> ⚠️IMPORTANT⚠️ </p>
+   <p> For a Raspberry Pi 5: 5V/5A USB-C power supply recommended for best performance, 5V/3A minimum.</p>
+   <p> We tried also with a less powerfull powerbank (2 A) and the Raspberry is able to run either. A warning message appear when the prompt of the model runs "UNDERVOLTAGE DETECTED" but this does not turn off the Raspberry.</p>
+
+
+
+  <hr>
+  <h2 id="AI"> How we setted up Lucy </h2>
+  <hr>
+
+      <p> <strong> Personalize the model</strong></p>
+    
+    <p> Name: We named our model Lucy.</p>
+    <p> Personality: Described the model as friendly, concise, and informative.</p>
+    <p> Response Style: Configured the model to respond briefly and clearly, suitable for embedded or low-latency applications.</p>
+
+  <hr>
+  <h2 id="prompt"> The prompt we suggest to use and why </h2>
+  <hr>
+  <h2 id="website"> Website documentation </h2>
+    <hr>
+  <p>For the documentation we put everything on this website. The website is mostly html and a bit of css to format the text. The website is hosted for free on github. </p> 
+  
+  <p> Organizing your docuemntation in a webpage is very useful because it allows you also to print the website and have a physical version of it, here is how to do it: </p>
+
+
+
+
 
 </div>
 
