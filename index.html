@@ -114,14 +114,8 @@ seconds.toString().padStart(2, '0') + "s ";
 
 
 
-    <div style="margin-left: 10%; margin-right: 10%; margin-top: 100px;"> 
-     <img src="little bomb timer.png" style="max-block-size: 20px; display: flex;" >
+    <div style="margin-left: 20%; margin-right: 20%; margin-top: 100px;"> 
 
-    <hr>
-    <p>KISD/Short_project/Ben_and_Lasse/Computer_room/Parallel_group/Adrian_Matteo_Leijie_Virginia</p>
-    <hr>
-
-    <br>
 
     <p>/ timer</p> 
     <h1 id="demo">0d 00h 00m 00s</h1>
@@ -147,39 +141,7 @@ seconds.toString().padStart(2, '0') + "s ";
 <br>/  <strong style="background-color: red;">red</strong>  / if Timer is > 48h probably materials are not there anymore
 </p> -->
 
-    <br>
-    <br>
-
-
-
-    <hr>
-    <p id="navigate">/ Tutorial</p> 
-<hr>
-
-  <p><strong> / Turn on the device</strong></p> 
-    <p> - make sure that all the cables are plugged in </p> 
-    <p> - if the device does not turn on, press the button on the powerbank side </p> 
-    <p> - if the light on the Raspberry is red, press the little button on the left side of the Raspberry </p> 
-    <p> - wait until the terminal show up</p>
-
-  <p> <strong> / Set up</strong> </p> 
-    <p> - type "screen" and press [↵] (enter) </p> 
-    <p> - type "ollama run Lucy" and press [↵] (enter) </p> 
-
-      <p> <strong> / Writing prompt to the LLM</strong> </p> 
-
-    <p> - type the message and press [↵] (enter)</p>
-    <p > - to read what the LLM produced, press [STRG] or [CMD]+ [A] and then right away [Ü]. <br> Now you can use the arrows to navigate the answer: UP [↑] DOWN [↓] <br> To go back to the terminal message input press [ESC]</p> 
-
-
-    <br>
-
-   
-  <p> <strong> / Additional notes</strong> </p> 
-    <p> - if the screen turn white, press the little button on the left side of the Raspberry, to reboot the system </p> 
-    <p> - to shut down the Raspberry, write "sudo shutdown -h now" </p> 
-    <p> - to consume less power you can enter in an only terminal mode by writing "sudo raspi-config" </p> 
-
+  
 
 
     <br>
@@ -191,6 +153,7 @@ seconds.toString().padStart(2, '0') + "s ";
      
     <p>/ chapter 1</p> 
     <h1>The <strong style="color: darkgreen;"> green </strong> container.</h1> 
+    <img src="images/_1211102.png" style="width: 90%;">
     <p>Here at KISD, there is a big <strong style="color: darkgreen;"> green </strong> container. Is used to collect offcuts from the workshop. But we noticed that many discarded items still hold great potential for reuse. However, due to a lack of information and awareness about what these objects are inside the container and how they can be repurposed, they often end up in the landfill. </p> 
 
     <h2>soooo</h2> 
@@ -229,6 +192,9 @@ seconds.toString().padStart(2, '0') + "s ";
   <a href="#AI"> <li>How we setted up Lucy</li> </a>
   <a href="#prompt"> <li> The prompt we used</li> </a>
   <a href="#prompt"> <li id="website"> Website documentation </li> </a>  
+  <a href="#tutorial"> <li id="website">Tutorial</li> </a>  
+  <a href="#china"> <li id="website">Chinese translation</li> </a>  
+
 
 
 </ul>
@@ -237,20 +203,48 @@ seconds.toString().padStart(2, '0') + "s ";
 
   <hr>
   <h2 id="space"> How we build the "Inspiration station" </h2>  
-  <p> Idea: The first thing we needed to discuss was to concretise how the “inspirational Station should interact with us. Important aspects we kept in mind was:availability, simple access for usage and the time interacting with it. As we didn't know exactly how long the raspberry in combination with ‘tiny Ollama’ will take for a prompt (we even thought that it would take up to 10 minutes), we got used to the idea of setting up a chair with some attachments for the keyboard, raspberry, display, battery solar panel… kind of like Isaac’s Super Chair in a different way. </p>
+  <p> The first thing we needed to discuss was to concretise how the inspiration Station should interact with us. Important aspects we kept in mind was: availability, simple access for usage and the time interacting with it. As we didn't know exactly how long the raspberry in combination with the Ai System will take for a prompt, we came to the conclusion that setting up a chair with some attachments for the keyboard, raspberry, display, battery solar panel would be the best solution… kind of like Isaac’s Super Chair in a different way.  </p>
 
-  <p> Working: With the leftovers we found in the container or the wood/metal workshop, we've had enough material to optimise our Chair for our purpose. Because of the typical KISD chairs in the courtyard, we made the decision to take one of these chairs and upgrade it with our inspirational device. The advantage of the chair is the comfort, the sustainability in any weather and of course the recognition as the KISD Chairs. The Umbrella stand was then perfect as it could stand next to the chair as an independent device, preventing a stable ground for keyboard, raspberry and the other setup of our inspiration station. We were lucky that we had a big screw on top of the stand, where we later on screwed the wood holding the device… For the keyboard we built a wood-board with 4 simple wooden parts: 
+  <img src="images/kenIsaac.png" style="width: 100%;">
+    <img src="images/img20250521_16065888.png"style="width: 100%;">
+  <img src="images/img20250521_16073637.png"style="width: 100%;">
+
+
+  <p> Including the garbage we found in the container and the wood/metal workshop, we had enough material to optimise our chair for our purpose. Because of the typical KISD chairs in the courtyard, we made the decision to take one of these chairs and upgrade it with our inspirational device. The advantage of the chair is the comfort, the durability in any weather and of course the symbol of KISD. The Umbrella stand was then perfect as it could stand next to the chair as an independent object, establishing a stable base for the station. We were lucky that we had a big screw on top of the stand, where we later on screwed the wood holding the device.
 </p>
 
-<p> -chipboard bar (bottom): it holds the mass of the device on top and is attached to the umbrella stand through a hole in the one end of the bar and the screw from the umbrella stand. </p>
+<!-- <img src="chair" style="width: 100%;"> -->
 
-<p> -plywood plate: it is attached to the chipboard with two screws from the bottom and with two screws to the next two wooden parts: </p>
-<p> -wooden beam: It prevents the keyboard to fall and is the back of our device where display and raspberry + cable are furthermore attached. One adjustment is needed; a small hole on the bottom for the kable of the keyboard to go through.  </p>
+<p> For the keyboard we built a wood board with 4 simple wooden parts: </p>
+<p>1. chipboard bar (bottom) it holds the mass of the device on top and is attached to the umbrella stand through a hole in the one end of the bar and the screw from the umbrella stand.  </p>
 
-<p> -plywood bar: this is the last protection for the keyboard to stabilise it. We flattened this bar with a grinding machine so it serves also as a hand rest. </p>
+<p>2. Plywood plate it is attached to the chipboard with two screws from the bottom and with two screws to the next two wooden parts</p>
+<p>3. Wooden beam It prevents the keyboard to fall and is the back of our device where display and raspberry + cable are furthermore attached. One adjustment is needed; a small hole on the bottom for the kable of the keyboard to go through.</p>
 
-<p> After the Keyboard stand was finished we focused on where the display should be attached and how…</p>
-  <hr>
+<p> 4. Plywood bar this is the last protection for the keyboard to stablize it. We flattened this bar with a grinding machine so it serves also as a hand rest. </p>
+
+<!-- <img src="blabla"style="width: 100%;"> -->
+
+<p> After the Keyboard stand was finished we focused on where the display should be attached and how. The easiest way for an individual attachment of every element plus the cables was by covering the wooden bar in the back with chicken wire. It is light and the material is wide spread and one can easily attach items with the wire. </p>
+
+<p> After we put the cables through the chicken wires, eventually the Holding capacity of the cables were as stable as a screen stand, so we just left it like this. </p>
+
+<!-- <img src="blabla" style="width: 100%;"> -->
+
+
+<p>1. Open the Terminal on your computer (with the raspberry pi) </p>
+<p>2. Run the following code:  </p>
+
+<p style="background-color: gainsboro;">sudo rm -rf LCD-show <br>
+git clone https://github.com/goodtft/LCD-show.git<br>
+chmod -R 755 LCD-show<br>
+cd LCD-show/<br>
+sudo ./LCD35-show</p>
+<p>3. Wait a few seconds… or even minutes (check if the system is rebooting) </p>
+
+<p>Keyboard: Now you need to put the end of the keyboard cable in the USB input from the raspberry (Black color) and you can start writing. </p>
+
+
   <p> As we said to use as less resource possible we built the station with scrap and offcuts that we found around. The final design come togheter while sourcing material. </p>
     <hr>
 
@@ -259,40 +253,60 @@ seconds.toString().padStart(2, '0') + "s ";
 
 
   <p> <strong> </strong> </p>
-      <p>1. Be sure you have a stable WIFI with strong signal, and a password you know</p>
-      <p>2. Downloading Ollama (https://ollama.com)</p>
-      <p>3. Downloading the Raspberry Pi installer (https://www.raspberrypi.com/software/)</p>
-      <p>4. Take out the Raspberry Pi’s memory card and insert it into a microSD card reader, then connect it to your computer. Follow the setup guide to configure your Raspberry Pi — including its name (you can leave it as default), a password, and the Wi-Fi name and password it will connect to later. Make sure to remember all your settings — you’ll need them soon! And the Internet for the Pi should be the same with your computer </p>
+  
 
-    <p> ⚠️ Make sure the Raspberry Pi is connected to the same network as your computer.</p>
+<p> You can access to the LLM easily nowadays via Website. But in our circumstance, since we want to use the system outdoor and there is no WIFI signal and stable energy resource, we need to build a Local LLM to run offline, and also run with low efficiency. So we choose Ollama as the Local LLM resources, and try different version to choose a workable one with proper Model Size and Inference Accuracy. </p>
 
-    <p> Open the Terminal on your computer and follow the setup steps to connect the Raspberry Pi. After that, you can input and manage content directly from your computer terminal. You can check the code at Code1 in “CodeBase” section</p>
+<p> And also we want to run the model in a portable way, so you can access to it without big computer. So we install the model to Raspberry Pi, as the brain of Lucy, and connect it to the screen, to show the interface of chatting with her. </p>
 
-    <p> ⚠️You can skip “Enabling VNC to gain visual access”.</p>
+<p>We have explored several different devices(Raspberry Pi & Screen especially) to realize our idea. We used a Raspberry Pi W Zero at first and then came across multiple issues. So then after a lot of back and forth found a Raspberry Pi 5. We were able to install the full OS with 64 bit on this and ran Ollama on it locally and connected a LCD screen. </p>
+<p>For the screen, our first choice, e-paper is a more energy-efficient and suitable choice. However, due to its limitations—such as low refresh rates, lack of touch support or only basic hardware button input, and smaller screen sizes—it's necessary to adapt the output format, display layout, refresh strategy, and design a corresponding button-based interaction system. Due to time constraints, these adjustments were not implemented in this project. So in our practice, we use the ordinary LCD screen which is compatible with Raspberry Pi. </p>
+<p>So here down below is our materials list, so you can have an overview:</p>
+<p>1. Raspberry Pi 5(as the brain for computer), and also you can find alternatives, here is the list of minimum requirements for the “brain” to operate Ollama.</p>
+<p>a. 64-bit OS (Ollama will not work on 32 bit) OR b. 4GB RAM (it needs some capacity to “think”)</p>
+<p>2. MicroSD/SD card (to install the “brain” of the RPI)</p>
+<p>3. USB Type-A to Type-C cable (or whichever one for your power supply)</p>
+<p>4. Keyboard </p>
+<p>5. LCD Screen</p>
+<p>6. Router and a stable wi-fi connection</p>
 
-    <p>  <strong> INSTALL OLLAMA IN TO THE RASPBERRY PI </strong> </p>
+<img src="images/_1211156.png" style="width: 100%;">
 
-    <p> Refer to Code 2 for the basic steps to load a suitable model onto your Raspberry Pi device. In our setup, we used the Sllama, which balances performance and size for edge deployment. If your device fails to run this model due to limited memory or compute resources, you may consider switching to a smaller model. When choosing an alternative, follow these guidelines: </p>
+<p>And the first step is to ensure your computer(we use Mac Operating system) have connect to a stable WIFI with password you know. And Downloading Ollama and Raspberry Pi to your computer. </p>
+<p>The first issue which actually took us multiple days to fix way a very simple but also frustrating one. In our University we use Eduroam which is a secure Network with VPN. This was blocking our access to connect the Raspberry Pi to it. We tried generating hotspots with the phones but the only two people with enough Data capacity both had an iphone which also blocks certin connections. The solution in the end was getting a Router to create a own Wifi. However this also took some running around the university, big smiles and convincing. </p>
+<p>Once we had the Router we had to reset it and ultimately generated our Wifi. Finally we were able to connect the RPI 5 to our Network. Why was all this hassle necersarry you might ask? Well we needed to connect to the Internet to be able to download Ollama. Once we had Ollama we downloaded Smollm too. </p>
+<p>After all things are settled,  you can then:</p>
+<p>Take out the Raspberry Pi’s memory card and insert it into a microSD card reader, then connect it to your computer. Follow the setup guide to configure your Raspberry Pi — including its name (you can leave it as default), a password, and the Wi-Fi name and password it will connect to later. Make sure to remember all your settings — you’ll need them soon! And the Internet for the Pi should be the same as your computer</p>
+<p>⚠️Make sure the Raspberry Pi is connected to the same network as your computer.</p>
+<p>Open the Terminal on your computer and follow the setup steps to connect the Pi. After that, you can download and manage content directly from your computer terminal.</p>
+<p>⚠️You can skip “Enabling VNC to gain visual access” and ssh into the RPI5</p>
+<p style="background-color: gainsboro;">ssh pi@raspberrypi.local</p>
+<p>Install Ollama Model to Raspberry Pi</p>
+<p>After we need to install curl. Then we can use curl and the URL to install the Model. In our case Ollama. (see Screenshot) In our setup, we used the Smollm, which balances performance and size for edge deployment.</p>
+<img src="images/Screenshot 2025-05-15 at 15.png" style="width: 100%;">
+<p style="background-color: gainsboro;">ollama pull smollm <br>
+ollama run smollm</p>
+<p> If your device fails to run this model due to limited memory or compute resources, you may consider switching to a Tinyllama. When choosing an alternative, follow these guidelines: </p>
+<p>Model Size: Ensure the model is lightweight enough (e.g., ≤2GB) to run efficiently on Raspberry Pi (especially models like Pi 4 or Pi 5 with 4–8GB RAM).</p>
+<p> Inference Accuracy: Choose a model with reasonably accurate responses for your task. Consider evaluating with a small set of benchmark prompts. </p>
+<p>  ⚠️We tested Tiny Ollama, but prefered the responses of Smollm.</p>
+<p> Personalize the model. Open the configuration using Nano and define key attributes. The customization allows you to shape how the model behaves and interacts. In our implementation, we defined the following parameters:</p>
 
-    <p>1. Model Size: Ensure the model is lightweight enough (e.g., ≤2GB) to run efficiently on Raspberry Pi (especially models like Pi 4 or Pi 5 with 4–8GB RAM).</p>
 
-    <p>2. Inference Accuracy: Choose a model with reasonably accurate responses for your task. Consider evaluating with a small set of benchmark prompts.</p>
+<img src="images/Screenshot 2025-05-19 at 13.png" style="width: 100%;">
+<p>Prepare to connect the screen to the Raspberry Pi</p>
+<p>Before proceeding, make sure to properly shut down the connection between the terminal and the Raspberry Pi by entering the following command in the terminal: [sudo poweroff] until the LED indicator on the Raspberry Pi turns solid red.</p>
+<p>Connect the display panel's pins to the Raspberry Pi. After reconnecting the power, the screen may turn white, ready to import the terminal interface. Re-establish the SSH connection to the Raspberry Pi via the terminal on your computer. Then, attach the terminal interface to the screen using the screen utility. Refer to Code 4.</p>
+<p>Now you got the terminal interface on the Raspberry Pi on the screen.</p>
 
-        <p> ⚠️ We tested Tiny Ollama, but it failed to run on Raspberry Pi 5.</p>
+<!-- <img src="" style="width: 100%;"> -->
 
+<p>You can remotely adjust Lucy's preferences at any time from your computer. Simply terminate the currently running program, then reconnect to the Raspberry Pi via your terminal. After that, use Nano (or any text editor) to modify the configuration as needed. As seen below you can tweek the parameters of the Modelfile to get completely different answers from Lucy whilst asking the exact same question. </p>
 
-    <p> Prepare to connect the display module to the Raspberry Pi. </p>
+<img src="images/Screenshot 2025-05-19 at 14.png" style="width: 100%;">
 
-    <p> Before proceeding, make sure to properly shut down the connection between the terminal and the Raspberry Pi by entering the following command in the terminal "sudo poweroff" until the LED indicator on the Raspberry Pi turns solid red. </p>
-
-
-
-
-
-
-  <p> <strong> For the screen </strong> we initially wanted to plug connect an e-ink screen, reducing the power consumption even more. We suggest you to go in this direction if you can. Because of the time costraints we had too opt for a normal plug-in touch screen, compatible with the Raspberry.</p>
-      <p>1. To connect it, you just need to plug in the screen trough the pins of the Raspberry</p>
-      <p>You can install the driver of the screen trough the terminal...</p>
+<p> </p>
+<p> </p>
 
 
   <p> <strong> To make the text bigger </strong> open the terminal and type in the terminal "sudo dpkg-reconfigure console-setup"</p>
@@ -310,14 +324,31 @@ seconds.toString().padStart(2, '0') + "s ";
     <p> 4. To navigate follow the <a href="#navigate"> navigation tutorial</a> </p>
 
 
+    <p>⚠️ KEYBOARD LAYOUT ⚠️ </p>
+    <p>In our case we had a German keyboar, if you also have a different keyboard here is it how to change it: </p>
+    <p>1. In the terminal write "sudo dpkg-reconfigure keyboard-configuration"</p>
+    <p>2. Keep default (e.g. Generic 105-key)</p>
+    <p>3. Country origin of your country choose "YOUR LANGUAGE"</p>
+    <p>4. Choose "YOUR LANGUAGE"</p>
+    <p>5. AltGr key, you can keep standard</p>
+    <p>6. To terminate X server, select "No"</p>
+    <p>7. To apply the new layout, in the terminal, write "sudo service keyboard-setup restart" 
+      and reboot the Raspberry with "sudo reboot"</p>
+
+
+
+
+
   <hr>
   <h2 id="energy"> How we powered the system" </h2>
     <hr>
 
-   <p>When selecting an energy system, we took into account the lack of accessible power outlets in outdoor environments, as well as our desire for the device to remain portable. Considering both portability and sustainability, we identified the following possible options:</p>
-   <p> Solar power banks – A more sustainable option, though potentially limited in energy efficiency.</p>
-   <p> Power banks – More efficient, but not sustainable and re-charge needed.</p>
-   <p> Custom solar energy system – Offers both sustainability and sufficient energy output. However, we have not implemented this option. You may [refer here] for materials and instructions to build your own solar-powered energy system.</p>
+  <img src="images/_1211161.png" style="height: 100%;">
+
+    <p>When selecting an energy system, we took into account the lack of accessible power outlets in outdoor environments, as well as our desire for the device to remain portable. Considering both portability and sustainability, we identified the following possible options:</p>
+   <p>Solar power banks – A more sustainable option, though potentially limited in energy efficiency.(0.6W)</p>
+   <p>Power banks – More efficient, but not sustainable and re-charge needed.</p>
+   <p>Custom solar energy system – Offers both sustainability and sufficient energy output. However, we have not implemented this option. You may refer here for materials and instructions to build your own solar-powered energy system.</p>
    <p> ⚠️IMPORTANT⚠️ </p>
    <p> For a Raspberry Pi 5: 5V/5A USB-C power supply recommended for best performance, 5V/3A minimum.</p>
    <p> We tried also with a less powerfull powerbank (2 A) and the Raspberry is able to run either. A warning message appear when the prompt of the model runs "UNDERVOLTAGE DETECTED" but this does not turn off the Raspberry.</p>
@@ -328,14 +359,73 @@ seconds.toString().padStart(2, '0') + "s ";
   <h2 id="AI"> How we setted up Lucy </h2>
   <hr>
 
+  <img src="images/_1211199.png" style="width: 100%;">
       <p> <strong> Personalize the model</strong></p>
-    
-    <p> Name: We named our model Lucy.</p>
-    <p> Personality: Described the model as friendly, concise, and informative.</p>
-    <p> Response Style: Configured the model to respond briefly and clearly, suitable for embedded or low-latency applications.</p>
 
+<p style="background-color: gainsboro;"> FROM smollm <br>
+nano Modelfile <br>
+#check out the Ollama Github page to give your model parameters and instructions<br>
+ollama create -f Lucy ./Modelfile<br>
+ollama run Lucy </p>
+
+<p>⚠️When we customizing Lucy, we find that try to minimize subjective descriptions, using more objective, noun-based descriptions, and also adjusting the order of instructions (as earlier instructions may carry more weight) and can help convey your customization needs more accurately. </p>
+
+<p> Those are the parameters we change inside the model </p>
+
+<p style="background-color: gainsboro;">
+Modelfile *                                                                    
+FROM smollm<br>
+PARAMETER temperature 0.4<br>
+PARAMETER top_p 0.7<br>
+PARAMETER frequency_penalty 0.1<br>
+PARAMETER presence_penalty 0.3<br>
+PARAMETER num_ctx 3048  # adjust if needed for longer prompts<br>
+<br>
+SYSTEM<br>
+You are Lucy, a cheerful and clever creative assistant.<br>
+<br>
+Provide precise and imaginative suggestions for how to transform ordinary materials into novel, artistic DIY design projects.<br>
+<br>
+You do NOT repeat or summarize the user's material. Instead, you generate NEW, unexpected project ideas using that material as a starting point.<br>
+<br>
+Your replies must include:<br>
+- A short project idea (max 300 words)<br>
+- 1 ^`^s2 creative use cases<br>
+- Step-by-step instructions (3 ^`^s6 steps)<br>
+- Mention of any needed tools, inputs, or adapters<br>
+<br>
+Your tone is creative, and hands-on. Prioritize sustainable, low-cost, and experimental approaches suitable for an Integrated Design <br>student. Avoid fille><br>
+<br>
+PROMPT """<br>
+Q: I have some old bicycle tubes. What can I do with them?<br>
+A: Good day, here ^`^ys a hands-on idea: Create a flexible, modular hinge system for foldable furniture using old bicycle tubes...<br>
+<br>
+Use Case 1: Design a folding stool with elastic joints<br>
+Use Case 2: Kinetic book covers for portfolios <br>
+<br>
+Steps: <br>
+1. Cut the tubes into 3 cm rings <br>
+2. Insert two wooden slats at 90   into each ring <br>
+3. Test for torsion, add more rings for reinforcement <br>
+4. Drill small pilot holes to fix the rings in place if needed <br>
+5. Sand and varnish the wood for a clean finish <br>
+6. Use screws or pegs to attach modular panels <br>
+
+Tools: Cutter, drill, wood, sandpaper, bicycle tubes, screws
+"""
+
+ </p> 
   <hr>
   <h2 id="prompt"> The prompt we suggest to use and why </h2>
+  <hr>
+
+  <img src="images/_1211164.png" style="width: 100%;">
+
+  <p> The better result for waste repurposing comes after suggesting to the model to create a certain number of ideas. You can try to compose your prompt like this:</p>
+  
+  <p> Prompt 1</p>
+  <p style="font-weight: 700; font-style: italic;">I have [n° of elemets]of [this object] made out of [this material], give me [n°, e.g. 3 or 5 or 10] [optios or ideas or tipps] to [reuse / repurpose] the material. </p>
+
   <hr>
   <h2 id="website"> Website documentation </h2>
     <hr>
@@ -344,14 +434,61 @@ seconds.toString().padStart(2, '0') + "s ";
   <p> Organizing your docuemntation in a webpage is very useful because it allows you also to print the website and have a physical version of it, here is how to do it: </p>
 
 
+    <hr>
+    <h2 id="tutorial">/ Tutorial</h2> 
+<hr>
+
+  <p><strong> / Turn on the device</strong></p> 
+    <p> - make sure that all the cables are plugged in </p> 
+    <p> - if the device does not turn on, press the button on the powerbank side </p> 
+    <p> - if the light on the Raspberry is red, press the little button on the left side of the Raspberry </p> 
+    <p> - wait until the terminal show up</p>
+
+  <p> <strong> / Set up</strong> </p> 
+    <p> - type "screen" and press [↵] (enter) </p> 
+    <p> - type "ollama run Lucy" and press [↵] (enter) </p> 
+
+      <p> <strong> / Writing prompt to the LLM</strong> </p> 
+
+    <p> - type the message and press [↵] (enter)</p>
+    <p > - to read what the LLM produced, press [STRG] + [ALT]+ [A] all at the same time. <br> Now you can use the arrows to navigate the answer: UP [↑] DOWN [↓] <br> To go back to the terminal message input press [ESC]</p> 
+
+
+    <br>
+
+   
+  <p> <strong> / Additional notes</strong> </p> 
+    <p> - if the screen turn white, press the little button on the left side of the Raspberry, to reboot the system </p> 
+    <p> - to shut down the Raspberry, write "sudo shutdown -h now" </p> 
+    <p> - SUGGESTED - to consume less power you can enter in an only terminal mode by writing "sudo raspi-config" </p> 
 
 
 
+
+
+<hr>
+
+</p><h1 id="china">🤔Why did we build Lucy…?</h1><div id="" class=""><div id="1f9dc350-9657-808c-a3fa-ce2a80936c7c" style="" class=""><ol type="1" id="" class="numbered-list" start="1"><li>我们观察到许多被遗弃的物品仍然具有较高的利用价值，但因为人们并不了解被遗弃物品的信息以及再利用的方法，使得其很可惜地走向了填埋场。我们希望用一种low cost/low-tech/low material的方式构建一个物品识别系统，能够帮助人们了解复杂容器（有一定的纵深，物品间有复杂的堆叠）里否存放了什么物品，并且提供创造性再利用/组合物品的方法，从而提高被遗弃物品的利用率。同时我们希望系统使用的材料和技术都能轻易获取，在软件和硬件两方面都尽量减少可能的能耗，并考虑在这些限制与良好的用户体验之间寻找一个合适的平衡点。</li></ol><ol type="1" class="numbered-list" start="2"><li>我们目前以科隆国际设计学院（KISD）木工坊前面的巨大的垃圾桶（size）为试点开展了实践，包含一个物理空间、Tiny Computer for AI system，Website for information，<ol type="a" id="" class="numbered-list" start="1"><li>物理空间：利用在<mark class="highlight-default">城市各处寻找到的废弃的材料</mark>搭建的实体的物理场所DIY space。这些材料来自于学校工坊的废弃物、街边被人们遗弃的物品，因此space的搭建也是concept的体现。</li></ol><ol type="a" id="" class="numbered-list" start="2"><li>AI system：使用<mark class="highlight-default">tiny本地大语言模型(Open-source local large language model无需联网即可运行)、低能耗墨水屏搭建的AI System，二手键盘用来与大模型对话。墨水屏不仅适用于在户外的强光下阅读，而且消耗极少的能源并能够在断电后保持运行一段时间。整个系统体量很小，且无需联网，因此系统能耗很低（maybe some data to show the energy），使用太阳能供电，能保持全天户外良好的运作。</mark></li></ol><ol type="a" class="numbered-list" start="3"><li><mark class="highlight-default">使用HTML搭建静态网站Static Website，Dithered Images、default typeface、xxxxxx，用</mark>尽可能低的技术实现我们想要达到的目的，我们尝试在技术使用尽可能少的技术、尽可能少的执行技术所带来的能源损耗与良好的用户体验之间寻找一个合适的平衡点。</li></ol><figure id="1f9dc350-9657-80a2-9562-f74c8b15f106" class="image"><a href="https://www.notion.so"><img src="https://www.notion.so"/></a></figure><p id="1fadc350-9657-80d2-88f5-f4824bbe8dee" class="">
+</p></li></ol></div><div id="1f9dc350-9657-80de-a55f-cf09603f55e5" style="" class=""><ol type="1" id="1fadc350-9657-80a9-afa3-cef51f140afc" class="numbered-list" start="1"></ol><ol type="1"  class="numbered-list" start="2"><li></div></div><h1  class="">🤝With Lucy, (hopefully)you can do…</h1><div  class=""><div style="" class=""><ol type="1" id="1f4dc350-9657-80e1-b2e0-c8459e824cc1" class="numbered-list" start="1"><li>下面是你可以如何使用<mark class="highlight-default">我们的系统</mark>：<ol type="a" id="1f4dc350-9657-8063-b034-f196f3aaa438" class="numbered-list" start="1"><li>DIY space<ol type="i"  class="numbered-list" start="1"><li>询问大语言模型<em>（名字），</em>了解物品再利用的方法</li></ol><ol type="i" id="1f9dc350-9657-807b-bcf1-f949a608dd15" class="numbered-list" start="2"><li>你可以在space中的sticker上看到开始/关闭与模型的对话的具体指令</li></ol></li></ol><ol type="a"  class="numbered-list" start="2"><li>Website<ol type="i" class="numbered-list" start="1"><li>可以通过扫描QR code进入网站</li></ol><ol type="i" id="1f4dc350-9657-80d6-b481-c87b0279c8fa" class="numbered-list" start="2"><li><mark class="highlight-red">使用摄像机拍摄物品，上传物品信息（more details）</mark></li></ol><ol type="i" class="numbered-list" start="3"><li>时间条显示自上次清理容器以来所经过的时间。<br/>当容器接近装满时，用户可以在网站上暂停时间条，以提示需要清理或进行下一步处理<br/></li></ol><ol type="i" id="1f4dc350-9657-80fa-9472-d98d4f3bfba5" class="numbered-list" start="4"><li>该项目的</li></ol></li></ol></li></ol></div><div style="" class=""><ol type="1" id="1f4dc350-9657-8004-aa15-c39f656523fe" class="numbered-list" start="1"></h1><h2  class=""><mark class="highlight-teal_background"><strong>👣How to build Lucy step by step… </strong></mark></h2><div id="1f5dc350-9657-80a1-8035-db6eca2a7839" class=""><div  style="" class=""><h2 id="1fadc350-9657-8023-9c80-ec44bddd4775" class="">1. 搭建物理空间🏠</h2><p  class="">下面是我们在KISD附近找到的各种废弃材料，你当然也可以根据手边现有的材料自由选择。主要原则是要确保工作时的舒适性。因此你可以考虑座位区域和工作区域的尺寸，并尽量让它保持可调节，以确保对所有人都友好、易于使用。</p><p  class="">下面是我们使用的材料，或许你可以参考…：</p><ol type="1"  class="numbered-list" start="1"><li>一个塑料躺椅，轻便且易于移动；</li></ol><ol type="1"  class="numbered-list" start="2"><li>一把伞用于保护户外的设备；</li></ol><ol type="1" id="1f5dc350-9657-80c9-b0c4-df97dc0a1753" class="numbered-list" start="3"><li>从学校木工坊寻找到的木头边角料，用于放置键盘</li></ol><ol type="1" id="1f5dc350-9657-8023-90fb-d090bb9bf29d" class="numbered-list" start="4"><li>一个可弯曲的铁片，用于放置屏幕、Raspberry Pi等各种元件</li></ol><ol type="1" id="1f5dc350-9657-80b0-ba00-f200ee88bfcd" class="numbered-list" start="5"><li>铁丝网，用于放置各种元件。</li></ol><h2 id="1fadc350-9657-802e-8679-e180c3a70ac9" class="">2. 搭建运行LLM的微型计算机</h2><p id="1fadc350-9657-80da-86c1-cf75eee2869d" class="">大模型对话现在已经变得非常容易，前提是在有网络连接的情况下。但在我们的案例中，我们想要在户外搭建一个系统，这意味着没有稳定的Wi-Fi信号以及电力支撑。所以我们需要在离线情况下运行大模型，并且尽量降低它的能耗。本地大模型是这种情况下的选择，在我们的案例中，我们选择了Ollama，并通过不断尝试选择了合适大小和回答准确度的版本。</p><p id="1f5dc350-9657-8043-a69d-fa57554fabe8" class="">我们使用 Ollama 作为本地大型语言模型，并在 Raspberry Pi 上运行它，然后将其连接到电子墨水屏进行显示。整个系统由太阳能供电。如果你有一台适合的旧电脑，也完全可以使用它，只需按照此处的教程（链接）运行 Ollama 即可。否则，以下是我们所使用的设备和材料：</p><ol type="1" id="1f5dc350-9657-8047-8702-c04c5c0d97c8" class="numbered-list" start="1"><li>Raspberry Pi 5（相当于计算机的大脑），也有其他的选择，但这是成功运行Ollama的最低要求：<ol type="a" id="1f5dc350-9657-8057-aa8e-c52593a82c7b" class="numbered-list" start="1"><li>64-bit</li></ol><ol type="a" id="1f5dc350-9657-80a4-ba42-faf7470e14ef" class="numbered-list" start="2"><li>4GB RAM</li></ol><ol type="a" id="1f5dc350-9657-8025-a483-f24feaa1db52" class="numbered-list" start="3"><li>…</li></ol></li></ol><ol type="1" id="1f5dc350-9657-80de-a61b-e6157dcac537" class="numbered-list" start="2"><li>微型SD卡</li></ol><ol type="1" id="1f5dc350-9657-8092-9e55-dbcaf203b37a" class="numbered-list" start="3"><li>Type A-Type C的数据线</li></ol><ol type="1" id="1f5dc350-9657-80e9-a125-f95503db19ca" class="numbered-list" start="4"><li>有数据线的可用的键盘</li></ol><ol type="1" id="1fadc350-9657-8097-8696-de5efcbbc75e" class="numbered-list" start="5"><li>LCD Screen</li></ol><ol type="1" id="1fadc350-9657-801d-a10f-cd6fb175feb4" class="numbered-list" start="6"><li>路由器</li></ol><p id="1fadc350-9657-80ad-b419-d48e87777d02" class="">接下来第一步是确保你的电脑连接上了稳定的网络，并且密码已知，稍后会用到。并且下载 <a href="https://ollama.com">Ollama</a> 和 <a href="https://www.raspberrypi.com/software/">Raspberry Pi</a> 到你的电脑上。</p><p id="1fadc350-9657-8076-8a3d-f8bb93366192" class="">在Mac上配置Raspberry Pi<div class="indented"><ol type="1" id="6f3e6110-6e43-4e42-bef2-7a372145515a" class="numbered-list" start="1"><li>将Raspberry Pi的记忆卡取下，插入MicroSD中，然后将其接入电脑。然后跟随<a href="https://youtu.be/wQJqwGVNHTM">这个教程</a>，在Raspberry Pi中完成设置，<strong>包括RaspberryPi的名称（可以不改动保持默认即可）、自身的密码以及稍后它将接入的WI-FI名称和密码，</strong>并记住你的设置！随后你将用到它们。<p id="b820937d-b272-410a-8d08-68a32523dcf2" class=""><mark class="highlight-red_background">⚠️为Raspberry Pi设置的网络应该和电脑使用的网络保持一致。</mark></p></li></ol><ol type="a" id="20e0a6d3-56ee-4046-bca6-754400a0a0c0" class="numbered-list" start="2"><li>打开电脑上的Terminal，跟随<a href="https://micadep.medium.com/configure-a-headless-raspberry-pi-from-macos-no-monitor-or-keyboard-required-7afdfd067391">这个教程</a>将Raspberry Pi配置到电脑上，并匹配网络、更新内容，随后你可以在电脑远程录入内容到Raspberry Pi。你可以参考代码库的<code>代码1</code>。<p id="cda0434b-7c9a-43ce-b792-5ea817f0f72b" class=""><mark class="highlight-red_background">⚠️可以跳过“</mark><em><mark class="highlight-red_background">Enabling VNC to gain visual access”章节</mark></em></p></li></ol></div></p><ol type="1" id="1fadc350-9657-8040-bfdf-c34dd85b23e2" class="numbered-list" start="1"><li> 向Raspberry Pi安装Ollama模型<ol type="a" id="f59e769e-cffa-4252-87f5-d6702b5f6a05" class="numbered-list" start="1"><li>参考<code>代码2</code>将合适的模型引入到Pi，我们使用的是Sllama。如果你的设备不能成功运行该模型，你可以尝试选择其他体量更小的模型基于以下原则：<ol type="i" id="b1c21fa8-1dd0-4b4a-a54e-590a2dbc5cb4" class="numbered-list" start="1"><li>确保体量大小能够在Raspberry Pi上运行</li></ol><ol type="i" id="981c43b5-19a0-44df-be07-7b19a83b476a" class="numbered-list" start="2"><li>确保模型回答的准确度</li></ol><p id="de110d1d-183f-4732-93d7-7ea7fa8bccbd" class=""><mark class="highlight-red_background">⚠️我们测试了tiny ollama，不能在Pi5上运行。</mark></p></li></ol><ol type="a" id="8bdff8a6-c00d-453d-a894-6038facd01fb" class="numbered-list" start="2"><li>定制你的大语言模型。进入Nano为模型设置名字，你可以调整模型的回答方式和语气等，代码参照<code>代码3</code><mark class="highlight-red">。我们调整了她的：</mark><ol type="i" id="5c6a73ea-e06e-4a36-8baf-7ecd3203f9bb" class="numbered-list" start="1"><li>Name of our model (Lucy)</li></ol><ol type="i" id="9acf4799-da7f-4fd2-a01a-8f776d83b2ba" class="numbered-list" start="2"><li>personality</li></ol><ol type="i" id="90b4b297-e503-4856-b1bb-13f80fe0b907" class="numbered-list" start="3"><li>answer shortly</li></ol><p id="417388ac-4648-437b-bbf7-b17d46013bd9" class="">⚠️ 在定制模型时，尽量减少主观性的、形容词类的描述，多使用客观的、名词性的描述，以及调整指令的前后顺序（权重不同）也可以帮助定制需求传达的准确性。</p></li></ol></li></ol><ol type="1" id="1fadc350-9657-80a0-9d90-f3429656d7a4" class="numbered-list" start="2"><li><strong>准备将屏幕板块与Raspberry Pi相连。</strong><ol type="a" id="217a3d47-096e-4d0e-82ec-920d244c296b" class="numbered-list" start="1"><li><strong>切记</strong>关闭terminal和raspberry Pi的连接<mark class="highlight-red">（在terminal中输入</mark><mark class="highlight-red"><code>sudo power-off</code></mark>），并且切断电源。Raspberry Pi上的灯变红时，就可以准备连接屏幕了。</li></ol><ol type="a" id="34379275-8452-46b9-9cb0-1a9bd6006a7a" class="numbered-list" start="2"><li>将屏幕板块的引脚接入Pi后重新接入电源，重连屏幕变白。在电脑上通过终端重新建立与raspberry pi的SSH链接。将电脑的terminal界面导入到screen中，参考<code>代码4</code></li></ol><ol type="a" id="912f294e-5bf9-4809-90d8-11dfd39c2daf" class="numbered-list" start="3"><li>屏幕上显示Raspberry Pi的界面，输入 <em><code>Ollama run Lucy</code></em>，打开Lucy模型，现在你可以与她聊天了。聊天结束时你可以通过输入<code>b</code><em><code>ye</code></em><em> </em>指令并回车输入<em><code>sudo shutdown -h</code></em>来结束程序。</li></ol></li></ol><ol type="1" id="1fadc350-9657-808c-a46e-e49c8176a4d2" class="numbered-list" start="3"><li>你可以随时在电脑端远程调整Lucy的偏好，只需关闭正在运行的程序，然后在电脑上重新与Raspberry Pi的链接，进入Nano进行修改即可。</li></ol><figure id="1f5dc350-9657-80ca-bc4a-e46796d55a01" class="image"><a href="How%20we%20built%20our%20own%20Lucy%201f4dc3509657807f8bfacdf857d336aa/WechatIMG1196.jpg"><img style="width:681.9921875px" src="How%20we%20built%20our%20own%20Lucy%201f4dc3509657807f8bfacdf857d336aa/WechatIMG1196.jpg"/></a></figure><h2 id="1fadc350-9657-801b-973c-c92ff4c1f0f1" class="">3. 为运行提供能源系统</h2><p id="1f5dc350-9657-8097-b1aa-d322e3d9a554" class="">在选择能源系统时，我们考虑到在户外环境中没有可接入的插头，且希望这个设备具有一定的可移动性。因此考虑能源的便携性，以及可持续性，以下是几种可能的选择：</p><ol type="1" id="1f5dc350-9657-80cd-9f00-c72bfaae3327" class="numbered-list" start="1"><li>太阳能充电宝，更加可持续的选择，但可能能源效率不够。</li></ol><ol type="1" id="1f9dc350-9657-8048-aef9-e84b0acd779d" class="numbered-list" start="2"><li>普通充电宝，选择更多，但不可持续并且续航能力差。</li></ol><ol type="1" id="1f9dc350-9657-80cb-a405-e9cdfb33c61c" class="numbered-list" start="3"><li>太阳能系统，可持续且能源效率充足。但我们未实现，可<a href="https://solar.lowtechmagazine.com/2023/12/how-to-build-a-small-solar-power-system/">参照这里</a>准备材料以及搭建你自己的太阳能能源系统。</li></ol><p id="1f9dc350-9657-808b-ade4-e442de87cde9" class=""><mark class="highlight-red_background">⚠️针对Raspberry Pi 5，建议使用 5V/5A 的 USB-C 电源以获得最佳性能，最低要求为 5V/3A。记得测试你的电源是否能撑起运行系统。</mark></p><h2 id="1fadc350-9657-8049-9eb3-c23ba7d44d64" class="">4. 编写网站</h2><ol type="1" id="1f5dc350-9657-804d-bd6c-ddf56c3e7db9" class="numbered-list" start="1"><li>打印二维码，因此你可以将它们粘贴在垃圾桶附近。</li></ol><p id="1f5dc350-9657-8025-ac7e-cc53508ab211" class="">
+
+
+
+
+
+
+    <hr>
+    <p>KISD/Short_project/Ben_and_Lasse/Computer_room/Parallel_group/Adrian_Matteo_Leijie_Virginia</p>
+    <hr>
+     <img src="little bomb timer.png" style="max-block-size: 20px; display: flex;" >
+
+    <br>
 </div>
+
+
+
 
 
 </body>
 
-<img >
 
 </html>
